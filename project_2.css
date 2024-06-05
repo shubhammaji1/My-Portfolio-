@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+.hero_section{
+    background-image: url(images/developer.png);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text{
+    color: white;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 64px;
+    padding-left: 16px;
+    
+}
+.lg_text{
+    font-size: 60px;
+    
+}
+.down{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.down h2{
+   font-size: 50px;
+    text-align: center;
+}
+.down span{
+    font-size: 72px;
+}
+
+.work{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 50px auto;
+    margin-bottom: 20px;
+}
+.card{
+    height: 400px;
+    max-width: 320px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(1,1,1,0.2);
+    overflow:hidden;
+    transition: 0.3s ease-in-out;
+    overflow-y: scroll;
+
+}
+.card:hover{
+    transform: scale(1.08);
+    box-shadow: 3px 3px 3px rgba(1,1,1,0.5);
+
+}
+.grid_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_con h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.card_con p{
+    font-size: 10px;
+}
+.card_con {
+    padding: 20px;
+}
+
+.footer_sec{
+    display: flex;
+    padding-top: 50px;
+    
+}
+.contact{
+    background-color: green;
+}
+.about{
+    background-color: brown;
+}
+
+.contact,
+.about{
+    min-height: 200px;
+    padding: 30px;
+    color: white;
+}
+.contact p,
+.about p{
+   margin-bottom: 30px;
+}
+.contact h3,
+.about h3{
+   font-size: 30px;
+   font-weight: 300;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 786px){
+    .hero_section{
+        min-height: 50vh;
+    }
+    .text{
+        padding: 10px;
+        text-align: center;
+    }
+    .lg_text{
+        font-size: 32px;
+    }
+    .down{
+        font-size: 24px;
+    }
+    .down h2{
+        font-size: 24px;
+    }
+    .down h2 span{
+        font-weight: 400;
+        font-size: 30px;
+    }
+    .footer_sec{
+        flex-direction: column;
+    }
+    .contact h3,
+    .about h3{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
